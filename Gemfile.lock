@@ -85,6 +85,9 @@ GEM
     font-awesome-sass-rails (3.0.2.2)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
+    foundation-icons-sass-rails (2.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     fssm (0.2.10)
     github_api (0.9.7)
       faraday (~> 0.8.1)
@@ -261,6 +264,7 @@ DEPENDENCIES
   devise
   execjs
   factory_girl_rails
+  foundation-icons-sass-rails
   github_api
   haml-rails
   inherited_resources
