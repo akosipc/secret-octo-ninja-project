@@ -21,6 +21,8 @@ group :assets do
   gem 'compass-rails'
   gem 'zurb-foundation'
   gem 'alertify-rails'
+  gem 'execjs'
+  gem 'therubyracer'
 end
 
 group :development do 
