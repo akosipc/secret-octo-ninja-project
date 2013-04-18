@@ -33,9 +33,8 @@ class User < ActiveRecord::Base
                       uid:              auth.uid,
                       email:            auth.info.email,
                       password:         Devise.friendly_token[0,20],
-                      first_name:       auth.extra.raw_info.first_name,
-                      last_name:        auth.extra.raw_info.last_name,
-                      gender:           auth.extra.raw_info.gender.capitalize!,
+                      first_name:       auth.info.name.split(" ")[0],
+                      last_name:        auth.info.name.split(" ")[-1],
                       username:         auth.info.nickname,
                       avatar_path:      auth.info.image,
                       role:             'User')
